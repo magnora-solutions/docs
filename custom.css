@@ -1,0 +1,128 @@
+* {
+  font-feature-settings: 'ss04' on;
+}
+
+.navbar-link {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 9999px !important;
+}
+
+.navbar-link a {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+.card {
+  border-radius: 24px !important;
+}
+
+/* // "tabs": [
+    //   {
+    //     "tab": "Guides",
+        
+    //     "groups": [
+    //       {
+    //         "group": "Overview",
+    //         "pages": [
+    //           "index"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Getting Started",
+    //         "pages": [
+    //           "getting-started/index",
+    //           "getting-started/creating-your-account",
+    //           "getting-started/importing-reviews",
+    //           "getting-started/setting-up-flows",
+    //           "getting-started/use-integrations-to-send-messages",
+    //           "getting-started/send-a-campaign",
+    //           "getting-started/adding-displays",
+    //           "getting-started/previewing-displays",
+    //           "getting-started/next-steps"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Gather Reviews",
+    //         "pages": [
+    //           "gather-reviews/index",
+    //           "gather-reviews/asking-customers",
+    //           "gather-reviews/basics-of-flows",
+    //           "gather-reviews/previewing-your-form",
+    //           "gather-reviews/additional-questions",
+    //           "gather-reviews/incentives"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Widgets",
+    //         "pages": [
+    //           "widgets/index",
+    //           "widgets/widget-overview",
+    //           "widgets/shopify-2-theme",
+    //           "widgets/homepage-carousel",
+    //           "widgets/displays-not-showing"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Manage Reviews",
+    //         "pages": [
+    //           "manage-reviews/index",
+    //           "manage-reviews/replying-to-reviews",
+    //           "manage-reviews/reply-display-name",
+    //           "manage-reviews/exporting-reviews",
+    //           "manage-reviews/customer-editing-reviews"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Product & Groups",
+    //         "pages": [
+    //           "products/index",
+    //           "products/editing-your-catalogue",
+    //           "products/product-groups"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Settings",
+    //         "pages": [
+    //           "settings/index",
+    //           "settings/notifications",
+    //           "settings/team"
+    //         ]
+    //       }
+    //     ]
+    //   },
+    //   {
+    //     "tab": "API reference",
+    //     "groups": [
+    //       {
+    //         "group": "API documentation",
+    //         "pages": [
+    //           "api-reference/introduction"
+    //         ]
+    //       },
+    //       {
+    //         "group": "Endpoint examples",
+    //         "pages": [
+    //           "api-reference/endpoint/get",
+    //           "api-reference/endpoint/create",
+    //           "api-reference/endpoint/delete",
+    //           "api-reference/endpoint/webhook"
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // ],
+    // "global": {
+    //   "anchors": [
+    //     {
+    //       "anchor": "Documentation",
+    //       "href": "https://mintlify.com/docs",
+    //       "icon": "book-open-cover"
+    //     },
+    //     {
+    //       "anchor": "Blog",
+    //       "href": "https://mintlify.com/blog",
+    //       "icon": "newspaper"
+    //     }
+    //   ]
+    // } */

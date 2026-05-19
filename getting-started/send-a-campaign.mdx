@@ -1,0 +1,37 @@
+---
+title: "Send Campaigns"
+description: "Send a one-time review request to past customers who were never asked."
+---
+
+A one-time campaign is ideal if you're just getting started with reviews and haven't collected any yet, or if you moved from another provider and there was a gap where customers weren't being sent requests. Magnora makes it easy to reach those past customers and start building your review count.
+
+## Sending a campaign via Magnora email
+
+Head to your [campaign flow builder](https://app.magnora.io/flows/campaigns) to get started. Configure the trigger window (how far back you want to go), set your conditions, and launch.
+
+<Note>
+  Make sure your post-purchase flow is also turned on before running a campaign, so new orders continue to be handled automatically going forward.
+</Note>
+
+## Sending a campaign via an integration (e.g. Klaviyo)
+
+If you're using an integration to send messages, the process has an extra step — you need to set up and activate the flow on the integration side before launching from Magnora.
+
+<Steps>
+  <Step title="Set up the flow in your integration">
+    Follow the guide for your integration (e.g. [Klaviyo](/integrations/klaviyo)) to create the campaign flow and turn it on.
+  </Step>
+  <Step title="Update the action in your Magnora campaign flow">
+    In your [campaign flow builder](https://app.magnora.io/flows/campaigns), change the action from **Send email from Magnora** to **Send event to [your integration]**. Use the quick-add option at the bottom of the flow, then delete the old action to avoid double sending.
+  </Step>
+  <Step title="Check your conditions">
+    By default, Magnora requires that customers are opted in to marketing before sending a campaign request. This is a legal requirement in many regions. Adjust this condition based on the rules that apply to your business.
+  </Step>
+  <Step title="Launch the campaign">
+    Once your flow looks correct, launch the campaign from the flow builder.
+  </Step>
+</Steps>
+
+<Warning>
+  Do not have both "Send email from Magnora" and "Send event to [integration]" active in the same flow at the same time — this will result in customers receiving duplicate messages.
+</Warning>

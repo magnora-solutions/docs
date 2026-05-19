@@ -1,0 +1,44 @@
+---
+title: "Editing your product catalogue"
+description: "Keep your product information accurate in Magnora for correct review matching and syndication."
+---
+
+Magnora's product catalogue stores information about the products you sell. It's used to match reviews to the right products and to syndicate reviews across storefronts and sales channels like Google Shopping.
+
+When you connect your Shopify store to Magnora, your product information is automatically synced to build your catalogue. It's important to keep this information accurate — an out-of-date catalogue can cause issues with review matching and syncing.
+
+## What's stored in your product catalogue
+
+| Magnora catalogue field | Shopify field | Where to manage |
+|---|---|---|
+| Title | Title | Shopify |
+| Product Variant ID | Product Variant ID | Shopify |
+| Brand | Vendor | Shopify |
+| SKU | SKU | Shopify |
+| GTIN | Barcode | Shopify or Magnora |
+
+## Updating GTIN, Brand, and SKU
+
+For consistency, the GTIN, Brand, and SKU fields can only be updated from your Shopify admin — changes sync to Magnora automatically.
+
+### Updating a small number of products (1–5)
+
+1. Go to **Shopify Admin → Products** and open the product you want to update
+2. Edit the **SKU**, **Barcode** (GTIN), and/or **Vendor** (Brand) fields as needed
+3. Click **Save**
+
+<Warning>
+  Enter only valid GTINs. Magnora validates GTIN data and will reject entries that don't conform to the GS1 standard.
+</Warning>
+
+### Updating many products (5+)
+
+1. Go to **Shopify Admin → Products**, select all the products you want to update, and click **Bulk edit**
+2. Use the column selector to add the **SKU**, **Barcode**, and **Vendor** fields to the editing view
+3. Update the values across your products and click **Save**
+
+## Verifying changes in Magnora
+
+After updating in Shopify, you can confirm the changes have synced by opening the product in the [Products section](https://app.magnora.io/products) of your Magnora admin. Look under **Unique Product Identifiers** to see the updated values.
+
+You can also download a full CSV export of your product catalogue from **Settings → Syndication settings → Manage Catalogue → Generate CSV Export**.

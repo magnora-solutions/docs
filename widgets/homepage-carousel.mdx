@@ -1,0 +1,52 @@
+---
+title: "Homepage reviews carousel"
+description: "Add a scrollable carousel of reviews to your homepage or any page on your storefront."
+---
+
+The review carousel lets you highlight your best reviews on your homepage, about page, or any other page. You can display product reviews or store reviews and customise the order, title, and more.
+
+## Adding via the theme editor (recommended)
+
+In your Magnora admin, go to [On-site](https://app.magnora.io/on_site), scroll down to **Carousel**, and click **Install on home page**. This opens the theme editor with the carousel block added to your homepage, where you can drag it into position and click **Save**.
+
+To add it manually in the theme editor: navigate to the page you want it on, click **Add section → Apps → Homepage Reviews Carousel**.
+
+### Customisation options
+
+Once the block is added, click on it in the theme editor to configure:
+
+- **Type of reviews** — product reviews or store reviews
+- **Display order** — how reviews are sorted
+- **Specific product** — optionally pin the carousel to reviews from one product
+- **Show review summary** — display average rating and total review count above the carousel
+- **Title** — custom heading text (only shows if review summary is enabled)
+- **Padding** — control spacing above and below the carousel
+- **Filter by tag** — show only reviews with a specific tag
+
+## Adding via custom code
+
+If you're on a legacy theme or prefer to install via code, copy the HTML below and insert it into your theme where you want the carousel to appear. Make sure the Magnora script and store key are already on the page.
+
+```html
+<div
+  class="magnora-review-carousel"
+  data-title="See Why Customers Love Us"
+  data-reviews-type="product_reviews"
+  data-product-id=""
+  data-show-summary="true"
+  style="padding-top: 16px; padding-bottom: 16px;"
+>
+</div>
+```
+
+### Code customisation options
+
+| Attribute | Values |
+|---|---|
+| `data-title` | Any text. Only displays when `data-show-summary` is `true`. |
+| `data-reviews-type` | `product_reviews` or `store_reviews` |
+| `data-product-id` | Optional Shopify product ID to show reviews for a specific product |
+| `data-show-summary` | `true` or `false` |
+| `data-review-tag` | Optional tag — only reviews with this tag will appear |
+
+You can also find a pre-configured code snippet with your store key in your Magnora admin under [On-site](https://app.magnora.io/on_site) → **Install with HTML** → **Carousel**.

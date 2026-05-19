@@ -1,0 +1,73 @@
+---
+title: "Incentives"
+description: "Reward customers with a discount code when they leave a review to increase submission rates."
+---
+
+Magnora can automatically generate a unique, one-time-use discount code for customers who leave a product review. Magnora handles everything in the background — checking eligibility, creating the code in your Shopify discount engine, and delivering it to the customer.
+
+## Types of incentives
+
+You can set up two types:
+
+- **Standard incentive** — given to any customer who leaves a review, regardless of whether they include media
+- **Media incentive** — given to customers who include a photo or video in their review. If a customer qualifies for both, they only receive the better of the two.
+
+For each type, you can choose from:
+
+- Free shipping coupon
+- Dollar-off coupon
+- Percentage-off coupon
+
+<Note>
+  Incentives only apply to product reviews. Store reviews (seller ratings) cannot be incentivised.
+</Note>
+
+## How to set up incentives
+
+Go to [Incentives](https://app.magnora.io/incentives) in your Magnora admin:
+
+1. Choose **Standard Incentive** or **Media Incentive**
+2. Select the discount type
+3. Enter the value (for fixed or percentage discounts)
+4. Choose whether to offer the incentive to unverified buyers — we recommend leaving this off
+5. Click **Add incentive**
+
+<Tip>
+  Once incentives are live, update the subject line or body of your review request messages to let customers know a reward is waiting — this can meaningfully improve your submission rate.
+</Tip>
+
+## Tiered incentives
+
+You can run both a standard and a media incentive at the same time, with the media incentive offering a higher reward. For example:
+
+- Standard: 10% off for any review
+- Media: 15% off for reviews that include a photo or video
+
+A customer will only ever receive one incentive — whichever is the best they qualify for.
+
+## How discount codes are created in Shopify
+
+Magnora uses your Shopify discount engine to generate the codes. You'll see pools of incentive codes in your **Shopify Admin → Discounts** section — they're easy to spot because they use the prefix **MG-**.
+
+## What customers see
+
+**During the review form:** If you have a media incentive active, Magnora automatically adds a prompt on the "Add media" step of the form letting customers know they can earn a higher reward by including a photo or video.
+
+**After submitting the review:** The discount code is shown on the confirmation page immediately after submission.
+
+**By email:** Magnora also sends customers a follow-up email with their discount code. For this to send automatically, make sure your **Review submitted actions** flow is turned on and includes the incentive email as an action. You can edit the email template from your [Templates page](https://app.magnora.io/flows/templates).
+
+## Sending incentive emails through an integration
+
+If you're using Klaviyo or another integration to manage post-review emails, you can trigger the incentive email using the `Magnora - Review Submitted` event. Contact [support@magnora.io](mailto:support@magnora.io) for setup guidance for your specific integration.
+
+## FAQs
+
+**Do discount codes expire?**
+By default, Magnora incentive codes don't have an expiry date. They remain active until manually disabled in your Shopify admin.
+
+**Can incentive codes be combined with other discounts?**
+By default, Magnora codes are set to not stack with other discounts — this prevents customers from combining them with existing promotions for an unintended total discount.
+
+**Does a customer get multiple codes if they review multiple products from one order?**
+No. Only one incentive is rewarded per order, even if the customer reviews multiple items.

@@ -1,0 +1,69 @@
+---
+title: "Adding widgets to your Shopify 2.0 theme"
+description: "Install Magnora's review blocks on your Shopify 2.0 theme using the theme editor."
+---
+
+This guide walks through adding Magnora to a Shopify Online Store 2.0 theme. There are two main steps:
+
+1. Enable the Magnora app embed
+2. Add Magnora's blocks to your theme
+
+## Step 1: Enable the app embed
+
+Go to the [On-site section](https://app.magnora.io/on_site) of your Magnora admin and click **Enable app embed**. This opens your active theme in Shopify's theme editor where you can confirm the embed is toggled on, then click **Save** in the top right corner.
+
+If you're working on a draft theme, use the dropdown next to your live theme name, select the draft theme, and click **Enable app embed**.
+
+## Step 2: Add blocks to your theme
+
+### Product reviews section
+
+This block displays reviews on your product page. In your Magnora admin, go to [On-site](https://app.magnora.io/on_site) and click **Install on product page** under the **Product reviews** box. This opens the theme editor on a default product page — drag the block into position and click **Save**.
+
+You can also add it manually in the theme editor: **Add section → Apps → Product Reviews Section**.
+
+<Note>
+  Reviews are displayed dynamically, so you don't need to select a product when adding the block — Magnora automatically shows reviews for the product being viewed.
+</Note>
+
+### Product summary stars
+
+These are the star rating summary that appears near the product title. In your Magnora admin, click **Install on product page** under the **Star ratings** box in the [On-site section](https://app.magnora.io/on_site).
+
+To add manually: in the theme editor, go to the **Product Information** section, click **Add block**, then select **Product Summary Stars**. Place the stars above or below the product title and click **Save**.
+
+### Stars on collection pages
+
+If your theme supports editing collection pages, add summary stars under the product title in the grid. Some themes support this via blocks, others require a code edit.
+
+To add via code:
+
+1. Go to your theme code editor
+2. Find the file that powers your collection cards — common file names include `product-grid.liquid`, `product-card.liquid`, `card-product.liquid`, or `product-item.liquid`
+3. Paste the following code between the product title and product price snippets:
+
+```html
+<script type="text/javascript" async="true" src="https://widgets.magnora.io/v1/magnora_shopify.js"></script>
+<span class="magnora-store-key" data-store-key="{{shop.metafields.magnora.store_key}}"></span>
+<span class="magnora-product-summary"
+  data-product-id="{{ product.id }}"
+  data-product-rating-count="{{ product.metafields.magnora.rating_count }}"
+  data-product-rating-average="{{ product.metafields.magnora.rating_average }}">
+</span>
+```
+
+4. Save and preview your collection pages
+
+<Tip>
+  If stars don't appear after adding the code, your theme may reference products with a different liquid object (e.g. `card-product` instead of `product`). Update the liquid object in the snippet to match your theme.
+</Tip>
+
+### Storewide reviews block
+
+This block can be added to any page — a homepage, about page, or a dedicated reviews page.
+
+**To add to an existing page:** Open that page in the theme editor, scroll to the bottom of the left panel, click **Add section**, then select **Reviews page (storewide)**. Click **Save**.
+
+**To create a new reviews page:** Go to Shopify Admin → **Online Store → Pages** → click **Add page**. Give it a title, save it, then navigate to that page in the theme editor and add the **Reviews page (storewide)** block.
+
+Once you've added your blocks and are happy with how everything looks, enable your displays from the [On-site section](https://app.magnora.io/on_site). You'll see a banner at the top — click **Enable** to make your reviews live for all shoppers.

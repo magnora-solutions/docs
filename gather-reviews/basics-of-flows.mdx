@@ -1,0 +1,45 @@
+---
+title: "The basics of flows"
+description: "Understand the trigger, conditions, and action that make up every flow in Magnora."
+---
+
+Flows are how Magnora automates communication with your customers. The most common use is sending review requests after a purchase, but flows are also used for sending incentives and pushing data to integration partners.
+
+Every flow is made up of three parts: a **trigger**, **conditions**, and an **action**.
+
+## Trigger
+
+The trigger is what starts the flow — when a customer does this specific thing, they enter the flow.
+
+For the post-purchase review request flow, you choose between two trigger options:
+
+- **Order fulfilled** — fires when Shopify marks the order as fulfilled
+- **Order delivered** — fires when the order is marked as delivered (uses tracking data; a fallback trigger is applied if delivery data isn't available)
+
+## Conditions
+
+Once triggered, Magnora checks a set of conditions before deciding whether to proceed. Click the edit icon on the conditions block in the flow builder to see and adjust them.
+
+The most important condition is the **time delay** — this controls how many days after fulfilment or delivery the review request is sent. Getting this timing right is key to maximising response rates.
+
+For a full list of available conditions, see the [flow conditions reference](/gather-reviews/flow-conditions).
+
+## Action
+
+If the trigger fires and all conditions are met, the flow moves to the action. For the post-purchase flow, the action is the review request itself.
+
+By default, the action uses Magnora's built-in email template. Click the template name to preview or edit it. You can also swap the action to send an event to an integration like Klaviyo, letting your marketing platform handle the actual message delivery.
+
+## Enabling a flow
+
+Once your trigger, conditions, and action are configured, turn the flow on from your [Flows page](https://app.magnora.io/flows) by clicking **Turn on** → **Enable**.
+
+<Note>
+  If the flow action is set to "Send event to [integration]", enabling the flow starts firing events to your integration partner — but customers won't receive a message until you've also set up the receiving flow in that platform.
+</Note>
+
+## Adding integrations
+
+If you want to send messages through Klaviyo, Omnisend, Postscript, Attentive, or another platform, you'll set the action to "Send event to [integration]" and then configure the message in that platform.
+
+[Learn more about integration setup →](/getting-started/use-integrations-to-send-messages)

@@ -3,89 +3,40 @@
   "theme": "almond",
   "name": "Magnora",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0C740E",
+    "light": "#3FCB42",
+    "dark": "#3FCB42"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
+    "anchors": [
           {
-            "group": "Getting started",
+            "anchor": "Help Center",
+            "icon": "book-open",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index", 
+              {
+                "group": "Getting started",
+                "pages": [
+                    "getting-started/adding-your-store",
+                    {
+                      "group": "Importing Reviews",
+                      "pages": [
+                          "getting-started/importing-reviews"
+                      ]
+                    },
+                    "getting-started/send-a-campaign"
+                ]
+              },
+              "theme"
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
+            "anchor": "API Reference",
+            "icon": "code",
+            "pages": ["api/overview", "api/endpoints"]
           }
         ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -94,15 +45,10 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Dashboard",
+        "href": "https://app.magnora.io"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -117,12 +63,9 @@
    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify"
-    }
+    
   },
   "background": {
-    "decoration": "gradient",
     "color": {
       "light": "#F3F3F3",
       "dark": "#0C0E12"
@@ -132,6 +75,9 @@
     "default": "system"
   },
   "fonts": {
-    "family": "Inter"
-  }
+    "family": "Inter",
+    "source": "https://app.magnora.io/fonts/InterVariable.woff2",
+    "format": "woff2"
+  },
+  "css": "/custom.css"
 }

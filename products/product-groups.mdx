@@ -1,0 +1,52 @@
+---
+title: "Product groups (bundle & family)"
+description: "Share reviews between related products in Magnora using families and bundles."
+---
+
+Product groups let you consolidate reviews across products that are related — either because they're the same product listed differently, or because one product is a bundle of others.
+
+<Note>
+  Product groups are available on the Core plan and higher.
+</Note>
+
+Magnora has two types of product groups:
+
+- **Families** — for products that are the same in reality but listed separately in Shopify (e.g. different colours, subscription vs one-time purchase variants)
+- **Bundles** — for pulling reviews up from individual component products into a bundle product
+
+To manage groups, go to [Products → Groups](https://app.magnora.io/products/groups) in your Magnora admin.
+
+## Creating a family
+
+Families share reviews two-ways between all products in the group. This is ideal when the same product exists as multiple SKUs.
+
+1. Go to [Products → Groups](https://app.magnora.io/products/groups) and click **Create Group → Family**
+2. Name your family (this is for internal use only — customers won't see it)
+3. Add products to the group by either:
+   - Clicking **Select products** and manually choosing products
+   - Using a product tag to automatically include all products with that tag (tags sync from Shopify automatically)
+4. Save the group
+
+<Tip>
+  If a product in a family is discontinued, use Shopify's **Draft** or **Archived** status rather than deleting it outright — this keeps the reviews visible on the other products in the family.
+</Tip>
+
+## Creating a bundle
+
+Bundles pull reviews up from the individual products in a bundle to aggregate them on the bundle product page.
+
+1. Go to [Products → Groups](https://app.magnora.io/products/groups) and click **Create Group → Bundle**
+2. In the top block, select your bundle product
+3. In the main section, select all the component products included in that bundle
+4. Save the group
+
+## FAQs
+
+**Are family group names visible to customers?**
+No — group names are for internal use only and are never shown on your storefront.
+
+**How many products can be in a group?**
+Core and Growth plans support up to 100 products per group. Premium plans support up to 1,000 products per group. If you need more, contact [support@magnora.io](mailto:support@magnora.io).
+
+**Reviews aren't showing after I created a group — what do I do?**
+It can take a few moments after creating a group for the review section to update due to browser caching. To force a refresh, add `/?magnora-break-cache=true` to the end of your store's URL.
